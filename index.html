@@ -1,45 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Jay Kumar</title>
-  <style>
-    body {
-      background-color: #0f172a;
-      color: white;
-      font-family: Arial;
-      text-align: center;
-      padding-top: 100px;
-    }
-    h1 {
-      font-size: 40px;
-    }
-    p {
-      font-size: 20px;
-      color: #94a3b8;
-    }
-    button {
-      padding: 10px 20px;
-      border: none;
-      background: #38bdf8;
-      color: black;
-      font-weight: bold;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jay Kumar | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+}
+
+.hero{
+    padding:100px 10%;
+}
+
+.hero h2{
+    font-size:45px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.section{
+    padding:60px 10%;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    margin-top:20px;
+    border-radius:8px;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    border:none;
+    background:#38bdf8;
+    font-weight:bold;
+    border-radius:5px;
+    cursor:pointer;
+}
+</style>
 </head>
 
 <body>
 
-  <h1>Hi, I'm Jay 👋</h1>
-  <p>BS Data Science @ IIT Madras</p>
-  <p>Python | AI | FastAPI Developer</p>
+<header>
+    <h1>Jay Kumar</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-  <br>
+<section class="hero">
+    <h2>Hi, I'm <span>Jay</span> 👋</h2>
+    <p>BS Data Science & Applications @ IIT Madras</p>
+    <p>AI | Backend | FastAPI | Data Analytics</p>
+    <button onclick="document.getElementById('contact').scrollIntoView()">Contact Me</button>
+</section>
 
-  <button onclick="alert('Contact: yourmail@gmail.com')">
-    Contact Me
-  </button>
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I'm a Data Science student at IIT Madras passionate about building
+            AI-powered backend systems and intelligent data applications.
+            Currently working on FastAPI-based Data Analyst Agent projects.
+        </p>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Data Analyst Agent API</h3>
+        <p>FastAPI-based intelligent system for web scraping, analysis, plotting and Q&A.</p>
+    </div>
+
+    <div class="card">
+        <h3>Automation Tools</h3>
+        <p>Python scripts for productivity and system automation.</p>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: yourmail@gmail.com</p>
+        <p>GitHub: github.com/jaykumar9022</p>
+    </div>
+</section>
 
 </body>
 </html>
